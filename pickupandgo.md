@@ -23,7 +23,8 @@ Another connected board is a Particle Xenon; do not operate on it.
 ## Board identification — verify before uploading
 
 - Manufacturer/model: LILYGO T-PicoC3, with RP2040 and ESP32-C3.
-- USB product on the RP2040 side: `PicoArduino`.
+- USB product on the RP2040 side originally: `PicoArduino`; after our upload:
+  `Pico`. The USB serial remains the reliable identifier.
 - USB vendor/product: `2E8A:000A`.
 - USB serial: `DE616C825776382A`.
 - Last known upload port: `/dev/cu.usbmodem124301`.
@@ -49,6 +50,9 @@ Official hardware documentation: https://github.com/Xinyuan-LilyGO/T-PicoC3
 - Buttons: GPIO 6 and GPIO 7, active low with internal pull-ups.
 - Button 1 feeds; button 2 plays; both toggle sleep. A single button wakes Acorn.
 - Pet blinks and swishes a curled tail, eats an acorn, and plays with a ball.
+- Activity views now include a front-facing picnic, running ball chase, curled
+  sleeping pose in a nighttime nest, digging to bury an acorn, and grooming.
+  Idle scenes cycle every eight seconds; button activities last five seconds.
 - Food, joy, and energy change every 10 seconds. State resets after reboot.
 - Rendering uses an allocated 64,800-byte RGB565 framebuffer to avoid flicker.
 - No Wi-Fi, external image assets, or ESP32-C3 firmware changes are needed.

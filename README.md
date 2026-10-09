@@ -3,6 +3,9 @@
 Arduino sketch for the RP2040 side of the board, with a 240 × 135 landscape
 display. Includes blinking, a curled moving tail, feeding, bouncing play, sleep,
 and three slowly changing care meters. State resets when power is removed.
+Distinct scenes show a front-facing picnic, running ball chase, nighttime
+sleeping nest, burying an acorn, and grooming. Idle views cycle every eight
+seconds; feeding and play scenes last five seconds.
 
 ## Build and upload
 

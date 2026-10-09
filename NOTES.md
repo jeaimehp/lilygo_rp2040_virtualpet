@@ -1,5 +1,16 @@
 # Project notes
 
+## October 9, 2026 — More activity views
+
+- Added front-facing eating and grooming poses, a curled sleeping pose in a
+  nighttime nest, and a digging pose with animated dirt.
+- Added a picnic blanket, trees, moon and stars, and a moving ball-chase scene.
+- Idle views rotate every eight seconds; button activities last five seconds.
+- Compilation succeeded: 71,512 bytes of flash, 9,568 bytes of static RAM.
+- Flash succeeded: 177,152-byte UF2 uploaded; the Pico returned on port 124301.
+- Physical appearance of the new scenes still needs user verification.
+- USB name now reports `Pico`, with the same serial DE616C825776382A.
+
 ## October 9, 2026 — Initial squirrel pet
 
 - Hardware: LILYGO T-PicoC3, RP2040 side; USB serial DE616C825776382A.
