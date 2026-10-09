@@ -1,5 +1,10 @@
 # Project notes
 
+## October 9, 2026 — GitHub repository
+
+- Created private repository https://github.com/jeaimehp/lilygo_rp2040_virtualpet.
+- Pushed local commits on `main` and set tracking to `origin/main`.
+
 ## October 9, 2026 — README media
 
 - Added six native 240 × 135 PNG screenshots and six looping GIFs to `assets/`.

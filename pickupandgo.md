@@ -22,7 +22,9 @@ Another connected board is a Particle Xenon; do not operate on it.
   Host stubs replace only hardware interfaces. Media is rendered firmware
   output, not a physical screen capture; PNG/GIF pixel equivalence is checked.
 - Compiled firmware: `build/SquirrelPet.ino.uf2` (ignored by Git)
-- Git branch: `main`; no remote has been configured.
+- Git branch: `main`, tracking `origin/main`.
+- GitHub repository: https://github.com/jeaimehp/lilygo_rp2040_virtualpet
+  (private). Remote `origin` uses the HTTPS URL with `.git` suffix.
 - Initial commits: `460e6bd` (pet program) and `5a0adbc` (dependencies and notes).
 
 ## Board identification — verify before uploading
