@@ -103,8 +103,10 @@ to enter the RP2040 bootloader. Do not target an unrelated bootloader device.
   plus the framebuffer allocated at runtime.
 - Upload succeeded: 174,080-byte UF2 written to the RP2040 bootloader.
 - Board reappeared at `/dev/cu.usbmodem124301` after upload.
-- **Physical screen appearance and button behavior have not been confirmed.**
-  The agent cannot see the screen through the USB serial connection.
+- The user's photo in `assets/photos/acorn-on-device.jpeg` confirms the
+  grooming scene and care meters display on the physical screen. Button
+  behavior and other scenes have not been physically confirmed. The agent
+  cannot see the screen through the USB serial connection.
 - No unresolved compiler errors remain. No automated tests were added.
 - The next useful check is the user's observation of the display and controls.
   If the screen is blank or rotated incorrectly, inspect power/backlight,

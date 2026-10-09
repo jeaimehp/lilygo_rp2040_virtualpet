@@ -1,5 +1,11 @@
 # Project notes
 
+## October 9, 2026 — Physical device photo
+
+- Added the user's photo to `assets/photos/acorn-on-device.jpeg` and the README.
+- The photo confirms that the grooming scene and care meters display on the
+  physical LCD. Button behavior has not been verified by the photo.
+
 ## October 9, 2026 — GitHub repository
 
 - Created private repository https://github.com/jeaimehp/lilygo_rp2040_virtualpet.

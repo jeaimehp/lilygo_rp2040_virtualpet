@@ -7,6 +7,12 @@ Distinct scenes show a front-facing picnic, running ball chase, nighttime
 sleeping nest, burying an acorn, and grooming. Idle views cycle every eight
 seconds; feeding and play scenes last five seconds.
 
+## Running on the device
+
+Acorn running on the LILYGO T-PicoC3, showing the whisker-grooming scene.
+
+<img src="assets/photos/acorn-on-device.jpeg" alt="LILYGO T-PicoC3 running Acorn's grooming scene" width="600">
+
 ## Screenshots and animations
 
 These are pixel-for-pixel **firmware framebuffer renders**, made by executing
