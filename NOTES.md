@@ -1,5 +1,15 @@
 # Project notes
 
+## October 9, 2026 — README media
+
+- Added six native 240 × 135 PNG screenshots and six looping GIFs to `assets/`.
+- Rendered the actual sketch with the vendored Adafruit GFX implementation;
+  hardware calls are stubbed on the desktop, with no replacement drawing code.
+- Verified PNG and decoded GIF pixels against the rendered framebuffer colors.
+- Visually reviewed all six scenes together; firmware was unchanged.
+- Media depicts firmware output, not a physical LCD capture.
+- `tools/render_assets.py` regenerates all media; requires clang++ and Pillow.
+
 ## October 9, 2026 — More activity views
 
 - Added front-facing eating and grooming poses, a curled sleeping pose in a

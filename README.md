@@ -7,6 +7,43 @@ Distinct scenes show a front-facing picnic, running ball chase, nighttime
 sleeping nest, burying an acorn, and grooming. Idle views cycle every eight
 seconds; feeding and play scenes last five seconds.
 
+## Screenshots and animations
+
+These are pixel-for-pixel **firmware framebuffer renders**, made by executing
+`SquirrelPet.ino` with the project's Adafruit GFX rasterizer. Each file is
+240 × 135 pixels, with no resizing, smoothing, or added artwork. They are not
+photographs or captures from the physical LCD; LCD color and brightness can differ.
+
+| Scene | Screenshot | Animation |
+| --- | --- | --- |
+| Meadow | ![Acorn in the meadow](assets/screenshots/meadow.png) | ![Blinking and tail swishing](assets/animations/meadow.gif) |
+| Picnic | ![Front-facing acorn picnic](assets/screenshots/picnic.png) | ![Eating an acorn](assets/animations/picnic.gif) |
+| Play | ![Chasing a ball](assets/screenshots/play.png) | ![Running and bouncing ball](assets/animations/play.gif) |
+| Sleep | ![Curled up in a moonlit nest](assets/screenshots/sleep.png) | ![Breathing and floating sleep letters](assets/animations/sleep.gif) |
+| Digging | ![Burying an acorn](assets/screenshots/digging.png) | ![Digging with flying dirt](assets/animations/digging.gif) |
+| Grooming | ![Cleaning whiskers](assets/screenshots/grooming.png) | ![Moving paws and blinking](assets/animations/grooming.gif) |
+
+### Regenerate the media
+
+Requires `clang++`, Python 3, and Pillow. From the repository directory:
+
+```sh
+python3 tools/render_assets.py
+```
+
+On the original Mac, Pillow is available in the bundled Python runtime:
+
+```sh
+/Users/jeaimehp/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/render_assets.py
+```
+
+`tools/host/` supplies inert Arduino/SPI/LCD interfaces for desktop rendering;
+the actual scene drawing and font rasterization run unchanged. The script checks
+PNG pixels and decoded GIF pixels against the RGB565 framebuffer expanded to RGB.
+Each GIF loops over 5.2 seconds. GIF's 10 ms timing resolution requires alternating
+60/70 ms frame delays to preserve the sketch's 65 ms average. Consecutive identical
+frames may be merged without changing playback.
+
 ## Build and upload
 
 1. Install Arduino IDE and the **Raspberry Pi Pico/RP2040** board package by

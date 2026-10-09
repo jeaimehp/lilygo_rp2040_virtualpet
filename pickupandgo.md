@@ -16,6 +16,11 @@ Another connected board is a Particle Xenon; do not operate on it.
 - Setup and build instructions: `README.md`
 - Implementation and flash history: `NOTES.md`
 - Local Adafruit libraries: `dependencies/`
+- README media: six native screenshots in `assets/screenshots/` and six GIFs
+  in `assets/animations/`. Run `tools/render_assets.py` with Python/Pillow and
+  clang++ to regenerate from the real sketch and Adafruit GFX drawing code.
+  Host stubs replace only hardware interfaces. Media is rendered firmware
+  output, not a physical screen capture; PNG/GIF pixel equivalence is checked.
 - Compiled firmware: `build/SquirrelPet.ino.uf2` (ignored by Git)
 - Git branch: `main`; no remote has been configured.
 - Initial commits: `460e6bd` (pet program) and `5a0adbc` (dependencies and notes).
